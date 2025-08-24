@@ -2,11 +2,11 @@ import random
 
 DESCRIPTION = "What number is missing in the progression?"
 
+
 def get_question_and_answer():
     length = random.randint(5, 10)
     start = random.randint(1, 50)
     step = random.randint(1, 5)
-
 
     progression = []
     for i in range(length):
@@ -21,6 +21,5 @@ def get_question_and_answer():
     for item in progression:
         question += str(item) + " "
     question = question.strip()
-
 
     return question, correct_answer
